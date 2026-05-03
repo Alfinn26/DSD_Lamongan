@@ -73,8 +73,9 @@ nav ul li a:hover{
 }
 
 .hero-logo img{
-    width:60px;
-    filter:drop-shadow(0 0 10px #00ff88);
+    width:70px;
+    height:70px;
+    object-fit:contain; /* biar proporsional */
 }
 
 /* NAVBAR LOGO */
@@ -88,12 +89,28 @@ nav ul li a:hover{
     display:flex;
     align-items:center;
 }
+.nav-left,
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.nav-right{
+    min-width:45px; /* biar seimbang */
+    justify-content:flex-end;
+}
 
 .logo{
-    width:40px;
-    height:40px;
-    object-fit:contain;
-    filter:drop-shadow(0 0 5px #00ff88);
+    width:45px;
+    height:45px;
+    object-fit:contain; /* ini kunci biar nggak gepeng */
+}
+
+.logo{
+    padding:3px;
+    background:rgba(0,255,136,0.05);
+    border-radius:8px;
 }
 
 /* CONTAINER */
