@@ -52,57 +52,41 @@
     </div>
 </section>
 
-<section id="bidang" class="container">
+    <section id="bidang" class="container">
     <h2 class="title">Bidang</h2>
     <div class="grid">
 
-        <div class="card glow">
+        <div class="card glow" onclick="openModal('kepemimpinan')">
             <h3>Kepemimpinan & Pembinaan</h3>
-            <p>Mengembangkan karakter dan jiwa kepemimpinan anggota</p>
         </div>
 
-        <div class="card glow">
+        <div class="card glow" onclick="openModal('kepanduan')">
             <h3>Teknik Kepanduan</h3>
-            <p>Meningkatkan keterampilan kepanduan dan kedisiplinan</p>
         </div>
 
-        <div class="card glow">
+        <div class="card glow" onclick="openModal('kegiatan')">
             <h3>Kegiatan</h3>
-            <p>Mengelola dan melaksanakan program kegiatan organisasi</p>
         </div>
 
-        <div class="card glow">
+        <div class="card glow" onclick="openModal('evaluasi')">
             <h3>Penelitian & Evaluasi</h3>
-            <p>Melakukan evaluasi serta pengembangan program kerja</p>
         </div>
 
-        <div class="card glow">
+        <div class="card glow" onclick="openModal('islami')">
             <h3>Kehidupan Islami</h3>
-            <p>Meningkatkan nilai keislaman dalam kehidupan sehari-hari</p>
         </div>
 
-        <div class="card glow">
+        <div class="card glow" onclick="openModal('media')">
             <h3>Media & Informasi</h3>
-            <p>Mengelola publikasi, dokumentasi, dan informasi organisasi</p>
         </div>
 
     </div>
 </section>
 
-<section id="dokumentasi" class="container">
-    <h2 class="title">Dokumentasi</h2>
-
-    <div class="gallery">
-        <img src="https://picsum.photos/300/200">
-        <img src="https://picsum.photos/301/200">
-        <img src="https://picsum.photos/302/200">
-    </div>
-
-    <div class="upload">
-        <input type="file" id="upload" multiple>
-        <div id="preview"></div>
-    </div>
-</section>
+<!-- MODAL -->
+<div class="modal" id="modal">
+    <div class="modal-content" id="modalContent"></div>
+</div>
 
 <footer>
     <p>© 2026 DSD Kwarda Lamongan</p>
