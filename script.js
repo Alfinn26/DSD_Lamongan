@@ -3,35 +3,66 @@ const modal = document.getElementById("modal");
 const content = document.getElementById("modalContent");
 
 const data = {
+
     kepemimpinan: `
         <h2>Kepemimpinan & Pembinaan</h2>
         <p>Pelatihan kepemimpinan dan upgrading anggota.</p>
-        <img src="https://picsum.photos/400/250?1">
+
+        <div class="slider">
+            <img src="img/kepemimpinan1.jpg">
+            <img src="img/kepemimpinan2.jpg">
+            <img src="img/kepemimpinan3.jpg">
+        </div>
     `,
+
     kepanduan: `
         <h2>Teknik Kepanduan</h2>
-        <p>Perkemahan dan latihan kedisiplinan.</p>
-        <img src="https://picsum.photos/400/250?2">
+        <p>Kegiatan perkemahan dan latihan.</p>
+
+        <div class="slider">
+            <img src="img/kepanduan1.jpg">
+            <img src="img/kepanduan2.jpg">
+        </div>
     `,
+
     kegiatan: `
         <h2>Kegiatan</h2>
-        <p>Event sekolah dan lomba pelajar.</p>
-        <img src="https://picsum.photos/400/250?3">
+        <p>Event dan lomba pelajar.</p>
+
+        <div class="slider">
+            <img src="img/kegiatan1.jpg">
+            <img src="img/kegiatan2.jpg">
+        </div>
     `,
+
     evaluasi: `
         <h2>Penelitian & Evaluasi</h2>
-        <p>Evaluasi program kerja organisasi.</p>
-        <img src="https://picsum.photos/400/250?4">
+        <p>Evaluasi program kerja.</p>
+
+        <div class="slider">
+            <img src="img/evaluasi1.jpg">
+            <img src="img/evaluasi2.jpg">
+        </div>
     `,
+
     islami: `
         <h2>Kehidupan Islami</h2>
         <p>Kajian dan kegiatan keagamaan.</p>
-        <img src="https://picsum.photos/400/250?5">
+
+        <div class="slider">
+            <img src="img/islami1.jpg">
+            <img src="img/islami2.jpg">
+        </div>
     `,
+
     media: `
         <h2>Media & Informasi</h2>
-        <p>Publikasi dan dokumentasi kegiatan.</p>
-        <img src="https://picsum.photos/400/250?6">
+        <p>Dokumentasi dan publikasi.</p>
+
+        <div class="slider">
+            <img src="img/media1.jpg">
+            <img src="img/media2.jpg">
+        </div>
     `
 };
 
