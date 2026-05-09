@@ -207,6 +207,35 @@ nav ul li a:hover{
     max-height:90vh;
     overflow-y:auto; /* biar bisa discroll di HP */
 }
+/* SLIDER */
+.slider{
+    display:flex;
+    gap:15px;
+    overflow-x:auto;
+    margin-top:20px;
+    padding-bottom:10px;
+}
+
+.slider::-webkit-scrollbar{
+    height:6px;
+}
+
+.slider::-webkit-scrollbar-thumb{
+    background:#00ff88;
+    border-radius:10px;
+}
+
+.slider img{
+    height:180px;
+    border-radius:10px;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.slider img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 15px #00ff88;
+}
 /* FOOTER */
 footer{
     text-align:center;
