@@ -89,7 +89,14 @@ nav ul li a:hover{
 }
 
 .hero h2{
-    font-size:3.5rem;
+    font-size:3.8rem;
+    line-height:1.2;
+}
+
+.hero p{
+    font-size:1.1rem;
+    color:#b8ffd8;
+    letter-spacing:1px;
 }
 
 .hero span{
