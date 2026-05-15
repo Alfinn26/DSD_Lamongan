@@ -66,6 +66,23 @@ const data = {
     `
 };
 
+function revealOnScroll(){
+    const reveals = document.querySelectorAll(".reveal");
+
+    reveals.forEach(reveal => {
+        const windowHeight = window.innerHeight;
+        const revealTop = reveal.getBoundingClientRect().top;
+
+        if(revealTop < windowHeight - 100){
+            reveal.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+
+revealOnScroll();
+
 // EVENT KHUSUS (WORK DI HP)
 cards.forEach(card => {
     card.addEventListener("click", () => {
