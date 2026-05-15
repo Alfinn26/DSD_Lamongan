@@ -1,3 +1,19 @@
+html{
+    scroll-behavior:smooth;
+}
+
+/* ANIMASI SCROLL */
+.reveal{
+    opacity:0;
+    transform:translateY(80px);
+    transition:all 1s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
 :root{
     --green-main:#00ff88;
     --green-dark:#003d2b;
