@@ -66,6 +66,13 @@ const data = {
     `
 };
 
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
+
+hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+
 window.addEventListener("scroll", () => {
 
     const nav = document.querySelector("nav");
