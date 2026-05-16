@@ -32,36 +32,67 @@ body{
     color: var(--green-main);
 }
 
-/* NAVBAR */
+/* NAVBAR FLOATING */
 nav{
     position:fixed;
-    width:100%;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+    
+    width:90%;
+    max-width:1200px;
+
     display:flex;
     justify-content:space-between;
-    padding:20px 60px;
-    background:rgba(0,0,0,0.5);
-    backdrop-filter:blur(10px);
+    align-items:center;
+
+    padding:15px 30px;
+
+    background:rgba(0, 20, 10, 0.35);
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(0,255,136,0.15);
+
+    border-radius:20px;
+
+    box-shadow:
+        0 0 20px rgba(0,255,136,0.08);
+
     z-index:1000;
 }
-
-nav h1{
-    color:var(--green-main);
-    text-shadow:0 0 10px var(--green-main);
-}
-
-nav ul{
-    display:flex;
-    gap:30px;
-    list-style:none;
-}
-
 nav ul li a{
-    color:#aaffdd;
+    color:#d8ffe9;
     text-decoration:none;
+    transition:0.3s;
+    position:relative;
 }
 
 nav ul li a:hover{
-    color:var(--green-main);
+    color:#00ff88;
+}
+
+/* GARIS ANIMASI */
+nav ul li a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-5px;
+
+    width:0%;
+    height:2px;
+
+    background:#00ff88;
+
+    transition:0.3s;
+}
+
+nav ul li a:hover::after{
+    width:100%;
+}
+nav.scrolled{
+    background:rgba(0, 15, 8, 0.6);
+    box-shadow:
+        0 0 25px rgba(0,255,136,0.15);
 }
 /* HERO */
 .hero{
@@ -295,6 +326,11 @@ footer{
     nav ul li a{
         font-size:14px;
     }
+
+    nav{
+    width:95%;
+    padding:15px 20px;
+}
 
     /* HERO */
     .hero{
