@@ -2,31 +2,86 @@ html{
     scroll-behavior:smooth;
 }
 
+/* NAVBAR */
+nav{
+    position:fixed;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+
+    width:90%;
+    max-width:1200px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 25px;
+
+    background:rgba(0,20,10,0.4);
+    backdrop-filter:blur(12px);
+
+    border-radius:20px;
+
+    z-index:1000;
+}
+
+/* LOGO */
+.nav-left,
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo{
+    width:40px;
+    height:40px;
+    object-fit:contain;
+}
+
+/* MENU */
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#d8ffe9;
+}
+
 /* HAMBURGER */
 .hamburger{
     display:none;
-    font-size:1.8rem;
-    color:#00ff88;
+    font-size:2rem;
     cursor:pointer;
+    color:#00ff88;
 }
 
-/* MOBILE */
+/* ================= MOBILE ================= */
 @media (max-width:768px){
 
     nav{
+        width:95%;
+        padding:12px 18px;
+
         flex-wrap:wrap;
     }
 
+    /* MUNCULKAN HAMBURGER */
     .hamburger{
         display:block;
     }
 
+    /* SEMBUNYIKAN MENU */
     nav ul{
-        width:100%;
         display:none;
+
+        width:100%;
         flex-direction:column;
         align-items:center;
-        gap:15px;
 
         margin-top:15px;
         padding-top:15px;
@@ -34,6 +89,7 @@ html{
         border-top:1px solid rgba(0,255,136,0.2);
     }
 
+    /* KETIKA ACTIVE */
     nav ul.active{
         display:flex;
     }
@@ -41,7 +97,14 @@ html{
     .nav-right{
         display:none;
     }
+
+    .logo{
+        width:32px;
+        height:32px;
+    }
+
 }
+
 
 /* ANIMASI SCROLL */
 .reveal{
@@ -73,44 +136,7 @@ body{
     color: var(--green-main);
 }
 
-/* NAVBAR FLOATING */
-nav{
-    position:fixed;
-    top:20px;
-    left:50%;
-    transform:translateX(-50%);
-    
-    width:90%;
-    max-width:1200px;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:15px 30px;
-
-    background:rgba(0, 20, 10, 0.35);
-    backdrop-filter:blur(14px);
-
-    border:1px solid rgba(0,255,136,0.15);
-
-    border-radius:20px;
-
-    box-shadow:
-        0 0 20px rgba(0,255,136,0.08);
-
-    z-index:1000;
-}
-nav ul li a{
-    color:#d8ffe9;
-    text-decoration:none;
-    transition:0.3s;
-    position:relative;
-}
-
-nav ul li a:hover{
-    color:#00ff88;
-}
 
 /* GARIS ANIMASI */
 nav ul li a::after{
@@ -344,41 +370,6 @@ footer{
     padding:30px;
     background:#000;
     color:#66ffcc;
-}
-
-/* =========================
-   RESPONSIVE MOBILE
-========================= */
-@media (max-width: 768px){
-
-    /* NAVBAR */
-   /* NAVBAR MOBILE */
-nav{
-    width:95%;
-    padding:10px 15px;
-
-    border-radius:16px;
-}
-
-.nav-left h1{
-    font-size:1rem;
-}
-
-.logo{
-    width:32px;
-    height:32px;
-}
-
-nav ul{
-    gap:8px;
-}
-
-nav ul li a{
-    font-size:13px;
-}
-    nav{
-    width:95%;
-    padding:15px 20px;
 }
 
     /* HERO */
